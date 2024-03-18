@@ -11,12 +11,12 @@ public class Vehicle {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
     @NotFound
     private String brand;
 
     @NotFound
     private String model;
+   // private Customer customer;
 
     private int year;
 
@@ -31,6 +31,11 @@ public class Vehicle {
     private String imagePath;
 
     private int quantity;
+
+    //@OneToOne(mappedBy = "vehicle")
+    //private Customer customer;
+
+
 
     public long getId() {
         return id;

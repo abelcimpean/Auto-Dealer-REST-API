@@ -33,7 +33,7 @@ public class VehicleController {
     public ResponseEntity<Vehicle> getById(@PathVariable("id") Long id) throws VehicleNotFoundException {
          Vehicle response = service.findById(id);
 
-        return new ResponseEntity<>(response,HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(response,HttpStatus.OK);
     }
 
     @DeleteMapping("deleteById/{id}")

@@ -23,8 +23,6 @@ public class VehicleDto {
     @NotFound
     private int quantity;
 
-
-
     public String getBrand() {
         return brand;
     }
