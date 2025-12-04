@@ -40,7 +40,7 @@ public class VehicleController {
     public ResponseEntity deleteById(@PathVariable("id") Long id){
        service.deleteById(id);
 
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @PostMapping("create")
@@ -52,7 +52,7 @@ public class VehicleController {
    public ResponseEntity updateVehicle(@PathVariable("id") Long id,@RequestBody @Valid VehicleDto updateVehicleRequest) throws VehicleNotFoundException {
 
         service.updateVehicle(id,updateVehicleRequest);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @GetMapping("findByBrandAndModel/{Brand}/{Model}")

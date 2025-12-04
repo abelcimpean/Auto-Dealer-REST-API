@@ -1,0 +1,62 @@
+/* UpdateGrupContainer.css */
+
+.update-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-group .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group .btn-primary {
+    background-color: olivedrab;
+    color: #fff;
+}
+
+.button-group .btn-primary:hover {
+    background-color: darkolivegreen;
+}
+
+.button-group .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.button-group .btn-secondary:hover {
+    background-color: #5a6268;
+}

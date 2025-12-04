@@ -62,6 +62,6 @@ public class CustomerController {
 
         customerService.deleteCustomer(id);
 
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

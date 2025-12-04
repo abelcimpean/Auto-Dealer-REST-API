@@ -32,12 +32,7 @@ public class Vehicle {
 
     private int quantity;
 
-    //@OneToOne(mappedBy = "vehicle")
-    //private Customer customer;
-
-
-
-    public long getId() {
+     public long getId() {
         return id;
     }
 
